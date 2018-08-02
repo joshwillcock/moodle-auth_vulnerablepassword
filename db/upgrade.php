@@ -23,7 +23,6 @@
  */
 
 function xmldb_auth_vulnerablepassword_upgrade($oldversion) {
-    global $CFG, $DB;
     $result = true;
 
     if ($oldversion < 2017012501) {

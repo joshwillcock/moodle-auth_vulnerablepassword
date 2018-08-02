@@ -49,9 +49,6 @@ class auth_plugin_vulnerablepassword extends auth_plugin_base {
      * @param string $password The password
      * @return bool Authentication success or failure.
      */
-    public function user_login($username, $password) {
-        return false;
-    }
 
     /**
      * Post authentication hook.
@@ -69,6 +66,7 @@ class auth_plugin_vulnerablepassword extends auth_plugin_base {
             $api = new \auth_vulnerablepassword\checkapi($first);
             $check = $api->lookup($final);
             if ($check->status) {
+                $entry = new \stdClass();
                 $entry->userid = $user->id;
                 $entry->passwordwarning = $check->count;
                 $entry->timemodified = \time();

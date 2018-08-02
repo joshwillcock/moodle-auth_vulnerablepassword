@@ -22,10 +22,10 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 namespace auth_vulnerablepassword;
-require_once("$CFG->libdir/filelib.php");
 if (!defined('MOODLE_INTERNAL')) {
     die('Direct access to this script is forbidden.'); // It must be included from a Moodle page.
 }
+require_once("$CFG->libdir/filelib.php");
 class checkapi
 {
     private $results;
@@ -39,7 +39,6 @@ class checkapi
     public function lookup ($sha) {
         $response = new \stdClass();
         if (strpos(strtolower($this->results), strtolower($sha)) !== false) {
-            $entry = new \stdClass();
             $position = strpos(strtolower($this->results), strtolower($sha));
             $count = substr($this->results, $position, 50);
             $count = explode(':', $count)[1];

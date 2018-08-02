@@ -2,7 +2,7 @@
 This Moodle plugin attempts to check HIBP's list of exposed passwords. Enabling your learners to be informed if their password has ever been involved in a data breach.
 
 ## Quick Description
-Over the last few years Data Breaches have been in the news a lot. It is not suprising with such large platforms being targetted that many of our account details have made their way onto the dark web or end up pasted all over the internet.
+Over the last few years Data Breaches have been in the news a lot. It is not surprising with such large platforms being targeted that many of our account details have made their way onto the dark web or end up pasted all over the internet.
 In an attempt to ensure our users accounts are safe, this plugin grabs the users password and without sending it to a third party checks if the password has been compromised. If the password has been compromised it will refer the user to a warning page on login, which they can then either change their password or continue to their original destination. This will occur every time the user logs in with the compromised password until they change it. 
 
 ## Installation

@@ -2,9 +2,9 @@
     <TABLES>
         <TABLE NAME="auth_vulnerablepassword" COMMENT="">
           <FIELDS>
-              <FIELD NAME="id" TYPE="int" LENGTH="11" NOTnull="true" SEQUENCE="true"/>
-              <FIELD NAME="userid" TYPE="int" LENGTH="11" NOTnull="true" SEQUENCE="false"/>
-              <FIELD NAME="passwordwarning" TYPE="int" LENGTH="11" NOTnull="true" SEQUENCE="false"/>
+              <FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="true"/>
+              <FIELD NAME="userid" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false"/>
+              <FIELD NAME="passwordwarning" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false"/>
               <FIELD NAME="timemodified" TYPE="int" LENGTH="20" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
           </FIELDS>
           <KEYS>
